@@ -8,7 +8,8 @@ caller = url.searchParams.get("caller");
 var phone = window.phone = PHONE({
 	    number        : user || "Anonymous", // listen on username line else Anonymous
 	    publish_key   : 'pub-c-913f12ba-ad24-4253-be33-ae162fdb0e5d',
-	    subscribe_key : 'sub-c-56bec794-c43a-11e8-8383-966eb74ead6b',
+      subscribe_key : 'sub-c-56bec794-c43a-11e8-8383-966eb74ead6b',
+      ssl: true
 	});	
 	 phone.ready(function(){});
 	phone.receive(function(session){
